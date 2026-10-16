@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    background-image: url('../imagens/fundo.png'); 
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #f5f2e8;
+    color: #123d35;
+    font-family: Arial, sans-serif;
+}

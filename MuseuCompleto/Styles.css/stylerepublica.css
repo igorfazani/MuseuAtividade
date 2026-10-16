@@ -1,0 +1,324 @@
+/* CONFIGURAÇÕES GERAIS */
+
+body {
+    margin: 0;
+    background-image: url('../imagens/fundo.png'); 
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #f5f2e8;
+    color: #123d35;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+h2 {
+    color: #073f34;
+    font-size: 28px;
+    margin-top: 8px;
+}
+
+h3 {
+    color: #07523d;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+section {
+    box-sizing: border-box;
+}
+
+
+/* CABEÇALHO */
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 200px;
+    height: 140px;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+.descer {
+    padding-top: 38px;
+    font-size: 20px;
+}
+
+.descer h2 {
+    margin: 0;
+}
+
+.descer a {
+    text-decoration: none;
+    color: #123d35;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.descer a:hover {
+    color: #f4c928;
+}
+
+
+
+/* BANNER PRINCIPAL */
+
+
+.banner-detalhe {
+    background-image: url("../imagens/banner-republica.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 60px 40px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.conteudo-banner {
+    max-width: 550px;
+}
+
+.conteudo-banner p:first-child {
+    color: #f4c928;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.conteudo-banner h1 {
+    color: white;
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+.conteudo-banner p:last-child {
+    color: white;
+    font-size: 16px;
+}
+
+
+/* INTRODUÇÃO */
+
+
+.introducao-detalhe {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 50px 0;
+}
+
+img.imagem-detalhe {
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.texto-detalhe {
+    width: 55%;
+}
+
+
+/* SEÇÕES DE CONTEÚDO */
+
+.secao-detalhe {
+    background-color: #e6eee7;
+    padding: 40px 30px;
+    margin-bottom: 25px;
+}
+
+.secao-detalhe h2 {
+    margin-top: 0;
+}
+
+
+/* LISTAS EM DESTAQUE */
+
+
+.lista-detalhe {
+    background-color: #e6eee7;
+    padding: 10px 0;
+    border-left: 5px solid #d9aa24;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.lista-detalhe ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.lista-detalhe li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.lista-detalhe li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* CURIOSIDADE */
+
+
+.curiosidade-detalhe {
+    background-color: #07523d;
+    color: white;
+    padding: 35px 30px;
+    margin: 30px 0;
+    border-radius: 6px;
+}
+
+.curiosidade-detalhe p:first-child {
+    color: #f4c928;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.curiosidade-detalhe h2 {
+    color: white;
+    margin-top: 5px;
+}
+
+.curiosidade-detalhe p:last-child {
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+
+/* FONTES DE PESQUISA */
+
+.fontes-detalhe {
+    padding: 40px 20px;
+}
+
+.fontes-detalhe ul {
+    padding-left: 20px;
+}
+
+.fontes-detalhe li {
+    margin-bottom: 12px;
+}
+
+.fontes-detalhe a {
+    color: #07523d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.fontes-detalhe a:hover {
+    color: #d9aa24;
+    text-decoration: underline;
+}
+
+
+/* BOTÃO VOLTAR */
+
+.voltar-historia {
+    padding: 20px;
+    text-align: center;
+}
+
+.voltar-historia a {
+    display: inline-block;
+    color: #07523d;
+    text-decoration: none;
+    border: 1px solid #07523d;
+    padding: 9px 18px;
+    border-radius: 20px;
+}
+
+.voltar-historia a:hover {
+    background-color: #07523d;
+    color: white;
+}
+
+
+/* RODAPÉ */
+
+footer,
+.rodape {
+    background-color: #064f3b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.rodape p {
+    margin: 5px;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 800px) {
+
+    .introducao-detalhe {
+        display: block;
+    }
+
+    img.imagem-detalhe,
+    .texto-detalhe {
+        width: 100%;
+    }
+
+    img.imagem-detalhe {
+        margin-bottom: 25px;
+    }
+
+    .conteudo-banner h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .banner-detalhe {
+        padding: 40px 20px;
+    }
+
+    .conteudo-banner h1 {
+        font-size: 28px;
+    }
+
+    .secao-detalhe {
+        padding: 30px 20px;
+    }
+
+    .curiosidade-detalhe {
+        padding: 30px 20px;
+    }
+
+    img.imagem-detalhe {
+        height: 220px;
+    }
+}

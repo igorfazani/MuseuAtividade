@@ -1,0 +1,433 @@
+/* CONFIGURAÇÕES GERAIS */
+
+body {
+    margin: 0;
+    background-image: url('../imagens/fundo.png'); 
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #f5f2e8;
+    color: #123d35;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+h2 {
+    color: #073f34;
+    font-size: 28px;
+    margin-top: 8px;
+}
+
+h3 {
+    color: #07523d;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+section {
+    box-sizing: border-box;
+}
+
+
+/* CABEÇALHO */
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 200px;
+    height: 140px;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+.descer {
+    padding-top: 38px;
+    font-size: 20px;
+}
+
+.descer h2 {
+    margin: 0;
+}
+
+.descer a {
+    text-decoration: none;
+    color: #123d35;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.descer a:hover {
+    color: #f4c928;
+}
+
+
+/* BANNER PRINCIPAL */
+
+.banner-detalhe {
+    background-image: url("../imagens/banner-historia.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 60px 40px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.conteudo-banner {
+    max-width: 550px;
+}
+
+.conteudo-banner p:first-child {
+    color: #f4c928;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.conteudo-banner h1 {
+    color: white;
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+.conteudo-banner h1 strong {
+    color: #f4c928;
+}
+
+.conteudo-banner p:last-child {
+    color: white;
+    font-size: 16px;
+}
+
+
+/* INTRODUÇÃO / SOBRE */
+
+
+.introducao-detalhe {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 50px 0;
+}
+
+img.imagem-detalhe {
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.texto-detalhe {
+    width: 55%;
+}
+
+
+/* LINHA DO TEMPO */
+
+
+.linha-do-tempo {
+    background-color: #e6eee7;
+    padding: 40px 30px;
+    margin-bottom: 25px;
+}
+
+.titulo-secao p {
+    color: #087653;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 3px solid #087653;
+    margin-top: 30px;
+    padding-top: 15px;
+}
+
+.momento {
+    width: 18%;
+    text-align: center;
+    position: relative;
+}
+
+.momento:before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: #087653;
+    border-radius: 50%;
+    margin: -23px auto 15px auto;
+}
+
+.momento h3 {
+    font-size: 16px;
+}
+
+.momento p {
+    font-size: 14px;
+}
+
+
+/* MOMENTOS MARCANTES (CARDS) */
+
+.momentos {
+    padding: 40px 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #e6eee7;
+    border-radius: 6px;
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.card h3 {
+    color: #123d35;
+    font-size: 17px;
+    margin: 10px 0 5px 0;
+}
+
+.card p {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    border: 1px solid #087653;
+    color: #087653;
+    text-decoration: none;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card a:hover {
+    background-color: #087653;
+    color: white;
+}
+
+
+/* CURIOSIDADES */
+
+.curiosidades-secao {
+    background-color: #e6eee7;
+    padding: 40px 30px;
+    margin: 25px 0;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.texto-curiosidades {
+    width: 50%;
+}
+
+.texto-curiosidades p:first-child {
+    color: #087653;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.texto-curiosidades h2 {
+    margin-top: 5px;
+}
+
+.texto-curiosidades li {
+    margin-bottom: 10px;
+}
+
+.imagem-curiosidades {
+    width: 50%;
+    height: 220px;
+}
+
+.imagem-curiosidades img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* TABELA E FONTES */
+
+.informacoes {
+    padding: 40px 0;
+    display: flex;
+    gap: 40px;
+}
+
+.tabela-historica {
+    width: 60%;
+}
+
+.fontes {
+    width: 40%;
+}
+
+.tabela-historica p:first-child,
+.fontes p:first-child {
+    color: #087653;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #e6eee7;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #07523d;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #c9d4cc;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.lista-fontes {
+    background-color: #e6eee7;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.lista-fontes ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.lista-fontes li {
+    margin-bottom: 10px;
+}
+
+.lista-fontes a {
+    color: #07523d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lista-fontes a:hover {
+    color: #d9aa24;
+    text-decoration: underline;
+}
+
+
+/* RODAPÉ */
+
+footer,
+.rodape {
+    background-color: #064f3b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.rodape p {
+    margin: 5px;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timeline {
+        flex-direction: column;
+        border-top: none;
+        border-left: 3px solid #087653;
+        padding-left: 20px;
+    }
+
+    .momento {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .momento:before {
+        margin: 0;
+        position: absolute;
+        left: -29px;
+        top: 2px;
+    }
+
+    .introducao-detalhe,
+    .curiosidades-secao,
+    .informacoes {
+        flex-direction: column;
+    }
+
+    img.imagem-detalhe,
+    .texto-detalhe,
+    .texto-curiosidades,
+    .imagem-curiosidades,
+    .tabela-historica,
+    .fontes {
+        width: 100%;
+    }
+}

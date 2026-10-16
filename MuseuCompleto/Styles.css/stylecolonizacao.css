@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    background-image: url('imagens/fundo.png'); 
+    background-image: url('../imagens/fundo.png'); 
     background-size: cover;
     background-position: center; 
     background-attachment: fixed;
@@ -88,7 +88,7 @@ section {
 
 
 .banner-detalhe {
-    background-image: url("imagens/banner-colonizacao.jpg");
+    background-image: url("../imagens/banner-colonizacao.jpg");
     background-size: cover;
     background-position: center;
     width: 90%;

@@ -1,0 +1,235 @@
+/* CONFIGURAÇÕES GERAIS */
+
+body {
+    margin: 0;
+    background-image: url('../imagens/fundo.png'); 
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #f5f2e8;
+    color: #123d35;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+h2 {
+    color: #073f34;
+    font-size: 26px;
+    margin-top: 8px;
+    line-height: 1.3;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* CABEÇALHO E MENU */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 200px;
+    height: 140px;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+.descer {
+    padding-top: 38px;
+    font-size: 20px;
+}
+
+.descer h2 {
+    margin: 0;
+}
+
+.descer a {
+    text-decoration: none;
+    color: #123d35;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.descer a:hover {
+    color: #f4c928;
+}
+
+/* BANNER PRINCIPAL */
+
+
+.banner-detalhe {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url("imagens/banner-ingresso.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 70px 40px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.conteudo-banner {
+    max-width: 550px;
+}
+
+.conteudo-banner p:first-child {
+    color: #f4c928;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.conteudo-banner h1 {
+    color: white;
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.conteudo-banner h1 span {
+    color: #f4c928;
+}
+
+.conteudo-banner p:last-child {
+    color: white;
+    font-size: 16px;
+}
+
+/* CARD DO FORMULÁRIO */
+
+
+.container-formulario {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 60px 0;
+}
+
+.card-formulario {
+    background-color: #f5f2e8;
+    width: 100%;
+    max-width: 550px;
+    padding: 40px 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+}
+
+.header-form p {
+    color: #d9aa24;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.header-form h2 {
+    margin-bottom: 25px;
+}
+
+/* Campos do formulário */
+.form-compra .campo {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-compra label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #07523d;
+    margin-bottom: 8px;
+}
+
+.form-compra input,
+.form-compra select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d5dfd7;
+    background-color: #faf9f5;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+.form-compra input:focus,
+.form-compra select:focus {
+    border-color: #07523d;
+}
+
+/* Botão de Compra */
+.btn-comprar {
+    width: 100%;
+    background-color: #07523d;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #053b2c;
+}
+
+
+/* RODAPÉ */
+
+footer,
+.rodape {
+    background-color: #064f3b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.rodape p {
+    margin: 5px;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 800px) {
+    .banner-detalhe {
+        padding: 50px 25px;
+    }
+
+    .conteudo-banner h1 {
+        font-size: 32px;
+    }
+
+    .card-formulario {
+        padding: 30px 20px;
+    }
+}
