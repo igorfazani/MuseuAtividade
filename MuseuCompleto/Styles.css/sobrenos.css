@@ -10,9 +10,9 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #fbfaf5;
-    color: #173b30;
+    background-image: url('imagens/Fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
