@@ -1,11 +1,319 @@
+
+/* ========================= */
+/* CONFIGURAÇÕES GERAIS */
+/* ========================= */
+
 body {
     margin: 0;
-    background-image: url('../imagens/fundo.png'); 
+    background-image: url("../imagens/fundo.png");
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: #f5f2e8;
     color: #123d35;
     font-family: Arial, sans-serif;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+h2 {
+    color: #073f34;
+    font-size: 28px;
+    margin-top: 8px;
+}
+
+h3 {
+    color: #07523d;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+section {
+    box-sizing: border-box;
+}
+
+
+/* CABEÇALHO E MENU */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 200px;
+    height: 140px;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+.descer {
+    padding-top: 38px;
+    font-size: 20px;
+}
+
+.descer h2 {
+    margin: 0;
+}
+
+.descer a {
+    text-decoration: none;
+    color: #123d35;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.descer a:hover,
+.descer a.active {
+    color: #f4c928;
+}
+
+
+/* BANNER SUPERIOR */
+
+.banner-imagem-fundo {
+    width: 90%;
+    max-width: 1200px;
+    height: 320px;
+    margin: 30px auto 15px auto;
+
+    background-image: url("../imagens/fachada-museu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 15px;
+}
+
+
+/* FAIXA DE HORÁRIOS */
+
+.caixa-horarios {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    padding: 25px 40px;
+
+    background-color: #07523d;
+    color: white;
+
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+    box-sizing: border-box;
+}
+
+.info-bloco {
+    border-left: 3px solid #f4c928;
+    padding-left: 15px;
+}
+
+.titulo-destaque {
+    color: #f4c928;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 0 0 8px 0;
+}
+
+.horario-item {
+    color: #e0e0e0;
+    font-size: 14px;
+    margin: 4px 0;
+    line-height: 1.6;
+}
+
+.info-frase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frase-manuscrita {
+    color: #f4c928;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: right;
+    margin: 0;
+}
+
+
+/* TÍTULO DA SEÇÃO */
+
+.secao-titulo {
+    margin-bottom: 30px;
+}
+
+.secao-titulo h1 {
+    font-size: 28px;
+    color: #07523d;
+    margin: 0 0 8px 0;
+    letter-spacing: 1px;
+}
+
+.linha-amarela {
+    width: 60px;
+    height: 4px;
+    background-color: #f4c928;
+    border-radius: 2px;
+}
+
+
+/* GRID DE CARDS */
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card-exposicao {
+    background-color: #f8f6ee;
+    border-radius: 12px;
+    overflow: hidden;
+
+    display: flex;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2ded0;
+}
+
+.card-thumb {
+    width: 45%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.card-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-conteudo {
+    width: 55%;
+    padding: 20px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+}
+
+.categoria-texto {
+    color: #07523d;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+}
+
+.card-conteudo h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #07523d;
+}
+
+.info-data,
+.info-horario {
+    font-size: 12px;
+    color: #555;
+    margin: 3px 0;
+    line-height: 1.4;
+}
+
+.btn-saiba-mais {
+    display: inline-block;
+    align-self: flex-start;
+
+    background-color: #07523d;
+    color: white;
+
+    padding: 8px 18px;
+    border-radius: 20px;
+
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+
+    margin-top: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #053b2c;
+}
+
+
+/* RODAPÉ */
+
+.rodape {
+    background-color: #064f3b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+.rodape p {
+    margin: 5px;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+/* RESPONSIVIDADE */
+
+
+@media (max-width: 800px) {
+
+    .grid-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .caixa-horarios {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .frase-manuscrita {
+        text-align: left;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .banner-imagem-fundo {
+        height: 190px;
+    }
+
+    .caixa-horarios {
+        padding: 30px 20px;
+    }
+
+    .secao-titulo h1 {
+        font-size: 24px;
+    }
 }
