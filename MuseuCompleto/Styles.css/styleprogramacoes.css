@@ -159,6 +159,24 @@ section {
     margin: 0;
 }
 
+/* BOTÃO COMPRAR INGRESSO */
+
+.btn-ingresso {
+    display: inline-block;
+    background-color: #f4c928;
+    color: #07523d;
+    padding: 12px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.btn-ingresso:hover {
+    background-color: #d9aa24;
+}
 
 /* TÍTULO DA SEÇÃO */
 
