@@ -1,224 +1,374 @@
+/* CONFIGURAÇÕES GERAIS */
 body {
-    background-image: url('imagens/Fundo.png');
+    margin: 0;
+    padding: 0;
+    background-image: url('../imagens/Fundo.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #123d35;
 }
 
-
+/* LINKS */
 a {
     text-decoration: none;
+    color: rgb(7, 87, 11);
 }
 
-
-nav {
-    width: fit-content;
-    border-radius: 5px;
-}
-
-
+/* CABEÇALHO */
 .center {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 15px 25px;
+    flex-wrap: wrap;
 }
 
-
-a {
-    color: rgb(7, 87, 11);
-    margin: 50px;
-
-
-}
-
-
-.black {
-    color: rgb(0, 0, 0);
-}
-
-
+/* LOGO */
 .logo {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.logo img {
     width: 140px;
     height: 150px;
+    object-fit: contain;
 }
 
-
+/* MENU */
 .descer {
-    padding-top: 38px;
-    font-size: 20px;
-
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
+.descer a {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
 
+.descer a:hover {
+    background-color: rgba(7, 87, 11, 0.12);
+    color: #034006;
+}
+
+/* BANNER */
 .banner {
     display: flex;
     justify-content: center;
     width: 100%;
-    border-radius: 10%;
+    margin: 20px 0 35px;
 }
-
 
 .banner img {
-    margin: auto;
-    border: 1px solid black;
-    justify-items: center;
+    display: block;
     width: 80%;
     height: 550px;
-    border-radius: 100px;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 40px;
 }
 
-
-.Titulo  {
-font-size: 37px;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-margin-left: 200px;
+/* SEÇÃO DE EXPOSIÇÕES */
+.secao-exposicoes {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    box-sizing: border-box;
 }
 
-.h1  {
-    margin-left: 190px;
-    font-size: 37px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: rgb(5, 70, 5);
+.h1 {
+    margin: 0 0 30px;
+    font-size: 28px;
+    color: #07523d;
+    letter-spacing: 1px;
 }
 
-
-.exposicoesline {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 10px;
-}
-
-.exposicoes {
-display: inline-block;
-vertical-align: top;
-width: 190px;
-padding: 10px;
-border-radius: 10px;
-border: 2px solid rgb(14, 228, 46);
-background-color: rgb(0, 0, 0);
-color: rgb(252, 252, 252);
-font-size: 16px;
-}
-
-
-.hr {
-    height: 1px;
-    background-color: #161616;
-    width: 100%;
-}
-
- /* .contato {
+/* GRID DOS CARDS */
+.grid-cards {
     display: grid;
-    grid-template-columns: 40% 55%;
-    justify-content: space-between;
-    align-items: start;
-    gap: 0;
-    padding: 0 20px 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
 }
 
-.conteudo-esquerda {
-    grid-column: 1;
-    grid-row: 1;   
+/* CARD DE EXPOSIÇÃO */
+.card-exposicao {
+    min-width: 0;
+    background-color: #f8f6ee;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    border: 1px solid #e2ded0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-exposicao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+}
+
+/* IMAGEM DO CARD */
+.card-thumb {
+    width: 45%;
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.card-thumb img {
     width: 100%;
+    height: 100%;
+    min-height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+/* CONTEÚDO DO CARD */
+.card-conteudo {
+    width: 55%;
+    min-width: 0;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    margin: 0;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
-.imagem-esquerda {
-    width: 65%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 50%;
-    align-self: center;
-    display: block;
-}
-.conteudo-direita {
-    grid-column: 2;
-    grid-row: 1;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+/* CATEGORIA */
+.categoria-texto {
+    color: #07523d;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 0 8px;
 }
 
-.imagem-horarios {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 100px;
-    display: block;
-}
-
-.texto-contato {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.texto-contato h1 {
-    font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: black;
-    margin: 0 0 8px 0;
-}
-
-.endereco h1 {
+/* TÍTULO DA EXPOSIÇÃO */
+.card-conteudo h3 {
+    margin: 0 0 10px;
     font-size: 18px;
-    color: rgb(5, 102, 238);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
-} */ 
-
-
-.flex {
-     display:flex;
-
+    color: #07523d;
 }
 
-.endereco {
-        display: inline-block;
-        
-
-}
-.endereco img {
-        padding-left: 100px;
-        height: 550px;
-}
-
-.endereco {
-    padding-left: 100px;
-    font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(4, 45, 92);
-    margin: 0 0 8px 0;
-   }
-
-.lugar  {
-    padding-left: 100px;
-    font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(10, 10, 10);
-    margin: 0 0 8px 0;
+/* DATA E HORÁRIOS */
+.info-data,
+.info-horario {
+    font-size: 12px;
+    color: #555;
+    margin: 3px 0;
+    line-height: 1.5;
 }
 
+/* BOTÃO SAIBA MAIS */
+.btn-saiba-mais {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: #07523d;
+    color: white;
+    padding: 9px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #053b2c;
+}
+
+/* LINHA DIVISÓRIA */
+.hr {
+    height: 1px;
+    border: none;
+    background-color: #161616;
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* INFORMAÇÕES DO MUSEU */
+.informacoes {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px 5%;
+}
+
+/* BLOCOS DE INFORMAÇÕES */
+.endereco,
 .contato {
-    border-radius: 20%;
-    padding-left:10%;
-    height: 10%;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    text-align: center;
 }
 
-.contato img{
-        display:flex;
-        justify-content: end;
-        border-radius: 20%;
+/* IMAGEM DO MAPA */
+.endereco img {
+    display: block;
+    width: 100%;
+    max-width: 430px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 0;
 }
 
-.linkzao a {
+/* IMAGEM DE CONTATO */
+.contato img {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 25px;
+}
+
+/* TEXTOS DE INFORMAÇÃO */
+.texto-info {
+    width: 100%;
+    max-width: 450px;
+}
+
+.texto-info h2 {
+    font-size: 26px;
+    color: rgb(4, 45, 92);
+    margin: 20px 0 12px;
+}
+
+.texto-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 8px 0;
+}
+
+/* LINK DE INGRESSOS */
+.linkzao {
     color: red;
+    font-weight: bold;
 }
 
+.linkzao:hover {
+    text-decoration: underline;
+}
+
+/* RODAPÉ */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+}
+
+/* TABLETS */
+@media (max-width: 800px) {
+
+    .center {
+        gap: 15px;
+    }
+
+    .banner img {
+        width: 90%;
+        height: 350px;
+    }
+
+    .grid-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .informacoes {
+        gap: 25px;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 500px) {
+
+    .center {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 110px;
+        height: 120px;
+    }
+
+    .descer {
+        gap: 5px;
+    }
+
+    .descer a {
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    .banner img {
+        height: 220px;
+        border-radius: 20px;
+    }
+
+    .h1 {
+        font-size: 24px;
+    }
+
+    .card-exposicao {
+        flex-direction: column;
+    }
+
+    .card-thumb {
+        width: 100%;
+        height: 180px;
+    }
+
+    .card-thumb img {
+        min-height: 0;
+        height: 100%;
+    }
+
+    .card-conteudo {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .informacoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .endereco,
+    .contato {
+        width: 100%;
+    }
+
+    .endereco img,
+    .contato img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+    }
+
+    .texto-info h2 {
+        font-size: 22px;
+    }
+
+    .texto-info p {
+        font-size: 16px;
+    }
+}
