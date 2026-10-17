@@ -1,5 +1,3 @@
-/* CONFIGURAÇÕES GERAIS */
-
 body {
     margin: 0;
     background-image: url('../imagens/fundo.png'); 
@@ -42,10 +40,6 @@ section {
     box-sizing: border-box;
 }
 
-
-/* CABEÇALHO */
-
-
 .center {
     display: flex;
     justify-content: center;
@@ -80,11 +74,6 @@ section {
 .descer a:hover {
     color: #f4c928;
 }
-
-
-
-/* BANNER PRINCIPAL */
-
 
 .banner-detalhe {
     background-image: url("../imagens/banner-republica.jpg");
@@ -121,8 +110,6 @@ section {
 }
 
 
-/* INTRODUÇÃO */
-
 
 .introducao-detalhe {
     display: flex;
@@ -142,9 +129,6 @@ img.imagem-detalhe {
     width: 55%;
 }
 
-
-/* SEÇÕES DE CONTEÚDO */
-
 .secao-detalhe {
     background-color: #e6eee7;
     padding: 40px 30px;
@@ -154,9 +138,6 @@ img.imagem-detalhe {
 .secao-detalhe h2 {
     margin-top: 0;
 }
-
-
-/* LISTAS EM DESTAQUE */
 
 
 .lista-detalhe {
@@ -180,9 +161,6 @@ img.imagem-detalhe {
 .lista-detalhe li:last-child {
     margin-bottom: 0;
 }
-
-
-/* CURIOSIDADE */
 
 
 .curiosidade-detalhe {
@@ -237,9 +215,6 @@ img.imagem-detalhe {
     text-decoration: underline;
 }
 
-
-/* BOTÃO VOLTAR */
-
 .voltar-historia {
     padding: 20px;
     text-align: center;
@@ -259,9 +234,6 @@ img.imagem-detalhe {
     color: white;
 }
 
-
-/* RODAPÉ */
-
 footer,
 .rodape {
     background-color: #064f3b;
@@ -276,9 +248,6 @@ footer,
     font-size: 13px;
     letter-spacing: 2px;
 }
-
-
-/* RESPONSIVIDADE */
 
 @media (max-width: 800px) {
 
