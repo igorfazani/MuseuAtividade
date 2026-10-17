@@ -1,5 +1,3 @@
-/* CONFIGURAÇÕES GERAIS */
-
 body {
     margin: 0;
     background-image: url('../imagens/fundo.png'); 
@@ -42,9 +40,6 @@ section {
     box-sizing: border-box;
 }
 
-
-/* CABEÇALHO */
-
 .center {
     display: flex;
     justify-content: center;
@@ -81,8 +76,6 @@ section {
 }
 
 
-/* BANNER PRINCIPAL */
-
 .banner-detalhe {
     background-image: url("../imagens/banner-independencia.jpg");
     background-size: cover;
@@ -117,9 +110,6 @@ section {
     font-size: 16px;
 }
 
-
-/* INTRODUÇÃO */
-
 .introducao-detalhe {
     display: flex;
     gap: 40px;
@@ -139,8 +129,6 @@ img.imagem-detalhe {
 }
 
 
-/* SEÇÕES DE CONTEÚDO */
-
 .secao-detalhe {
     background-color: #e6eee7;
     padding: 40px 30px;
@@ -151,8 +139,6 @@ img.imagem-detalhe {
     margin-top: 0;
 }
 
-
-/* LISTAS EM DESTAQUE */
 
 .lista-detalhe {
     background-color: #e6eee7;
@@ -175,8 +161,6 @@ img.imagem-detalhe {
     margin-bottom: 0;
 }
 
-
-/* CURIOSIDADE */
 
 .curiosidade-detalhe {
     background-color: #07523d;
@@ -205,8 +189,6 @@ img.imagem-detalhe {
 }
 
 
-/* FONTES DE PESQUISA */
-
 .fontes-detalhe {
     padding: 40px 20px;
 }
@@ -231,8 +213,6 @@ img.imagem-detalhe {
 }
 
 
-/* BOTÃO VOLTAR */
-
 .voltar-historia {
     padding: 20px;
     text-align: center;
@@ -252,9 +232,6 @@ img.imagem-detalhe {
     color: white;
 }
 
-
-/* RODAPÉ */
-
 footer,
 .rodape {
     background-color: #064f3b;
@@ -269,9 +246,6 @@ footer,
     font-size: 13px;
     letter-spacing: 2px;
 }
-
-
-/* RESPONSIVIDADE */
 
 @media (max-width: 800px) {
 
