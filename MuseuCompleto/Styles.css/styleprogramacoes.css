@@ -1,8 +1,4 @@
 
-/* ========================= */
-/* CONFIGURAÇÕES GERAIS */
-/* ========================= */
-
 body {
     margin: 0;
     background-image: url("../imagens/fundo.png");
@@ -45,9 +41,6 @@ section {
     box-sizing: border-box;
 }
 
-
-/* CABEÇALHO E MENU */
-
 .center {
     display: flex;
     justify-content: center;
@@ -85,8 +78,6 @@ section {
 }
 
 
-/* BANNER SUPERIOR */
-
 .banner-imagem-fundo {
     width: 90%;
     max-width: 1200px;
@@ -101,8 +92,6 @@ section {
     border-radius: 15px;
 }
 
-
-/* FAIXA DE HORÁRIOS */
 
 .caixa-horarios {
     width: 90%;
@@ -159,8 +148,6 @@ section {
     margin: 0;
 }
 
-/* BOTÃO COMPRAR INGRESSO */
-
 .btn-ingresso {
     display: inline-block;
     background-color: #f4c928;
@@ -177,8 +164,6 @@ section {
 .btn-ingresso:hover {
     background-color: #d9aa24;
 }
-
-/* TÍTULO DA SEÇÃO */
 
 .secao-titulo {
     margin-bottom: 30px;
@@ -198,8 +183,6 @@ section {
     border-radius: 2px;
 }
 
-
-/* GRID DE CARDS */
 
 .grid-cards {
     display: grid;
@@ -285,9 +268,6 @@ section {
     background-color: #053b2c;
 }
 
-
-/* RODAPÉ */
-
 .rodape {
     background-color: #064f3b;
     color: white;
@@ -301,8 +281,6 @@ section {
     font-size: 13px;
     letter-spacing: 2px;
 }
-
-/* RESPONSIVIDADE */
 
 
 @media (max-width: 800px) {
