@@ -1,109 +1,204 @@
-    <!DOCTYPE html>
-    <html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PaginaPrincipal</title>
-        <link rel="stylesheet" href="Styles.css/PaginaPrincipal.css">
-    </head>
+    <title>Museu do Brasil - Página Principal</title>
 
-    <body>
+    <link rel="stylesheet" href="Styles.css/PaginaPrincipal.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="center">
+
+            <div class="logo">
+                <img src="imagens/logo.png" alt="Logo do Museu">
+            </div>
+
+            <nav class="descer">
+                <a href="sobrenos.html" target="_blank">Sobre nós</a>
+                <a href="exposicoes.html" target="_blank">Exposições</a>
+                <a href="Programacoes.html" target="_blank">Programações</a>
+                <a href="sobre.html" target="_blank">Contato</a>
+            </nav>
 
         </div>
+    </header>
 
-            <div class="center">
+    <main>
 
-                <div class="logo"> <img src="imagens/logo.png">
-                </div>
+        <section class="banner">
+            <img src="imagens/banner.png" alt="Banner do Museu do Brasil">
+        </section>
 
-                <nav class="descer">
-                    <h2 class="black">
-                        <a href="sobrenos.html" target="_blank">Sobre nós</a>
-                        <a href="exposicoes.html" target="_blank">Exposições</a>
-                        <a href="Programacoes.html" target="_blank">Programações</a>
-                        <a href="sobre.html" target="_blank">Contato</a>
-                    </h2>
-                </nav>
+        <section class="secao-exposicoes">
+
+            <h1 class="h1">Exposições em Destaque</h1>
+
+            <div class="grid-cards">
+
+                <article class="card-exposicao">
+
+                    <div class="card-thumb">
+                        <img src="imagens/torcida.jpg" alt="Esporte">
+                    </div>
+
+                    <div class="card-conteudo">
+                        <p class="categoria-texto">🏆 Esporte</p>
+
+                        <h3>O Brasil em Movimento</h3>
+
+                        <p class="info-data">
+                            <strong>Até:</strong> 31/Out/2027
+                        </p>
+
+                        <p class="info-horario">
+                            <strong>Horários disponíveis:</strong><br>
+                            Qua-Sex: 09h às 17h | Sáb: 10h às 19h
+                        </p>
+
+                        <a href="#" class="btn-saiba-mais">
+                            Saiba mais ➜
+                        </a>
+                    </div>
+
+                </article>
+                <article class="card-exposicao">
+
+                    <div class="card-thumb">
+                        <img src="imagens/raizesbrasil.webp" alt="Cultura">
+                    </div>
+
+                    <div class="card-conteudo">
+                        <p class="categoria-texto">🎭 Cultura</p>
+
+                        <h3>Nossa Gente, Nossa Arte</h3>
+
+                        <p class="info-data">
+                            <strong>Até:</strong> 30/Nov/2027
+                        </p>
+
+                        <p class="info-horario">
+                            <strong>Horários disponíveis:</strong><br>
+                            Qui-Dom: 11h às 20h
+                        </p>
+
+                        <a href="#" class="btn-saiba-mais">
+                            Saiba mais ➜
+                        </a>
+                    </div>
+
+                </article>
+                <article class="card-exposicao">
+
+                    <div class="card-thumb">
+                        <img src="imagens/maravilhas.jpg"
+                             alt="Maravilhas do Brasil">
+                    </div>
+
+                    <div class="card-conteudo">
+                        <p class="categoria-texto">🍃 Maravilhas do Brasil</p>
+
+                        <h3>Belezas que Encantam</h3>
+
+                        <p class="info-data">
+                            <strong>Até:</strong> 31/Jan/2028
+                        </p>
+
+                        <p class="info-horario">
+                            <strong>Horários disponíveis:</strong><br>
+                            Diariamente: 09h às 17h
+                        </p>
+
+                        <a href="#" class="btn-saiba-mais">
+                            Saiba mais ➜
+                        </a>
+                    </div>
+
+                </article>
+
+                <article class="card-exposicao">
+
+                    <div class="card-thumb">
+                        <img src="imagens/raizes.png"
+                             alt="História do Brasil">
+                    </div>
+
+                    <div class="card-conteudo">
+                        <p class="categoria-texto">🏛️ História do Brasil</p>
+
+                        <h3>Raízes do Nosso País</h3>
+
+                        <p class="info-data">
+                            <strong>Até:</strong> 15/Dez/2027
+                        </p>
+
+                        <p class="info-horario">
+                            <strong>Horários disponíveis:</strong><br>
+                            Ter-Sáb: 10h às 18h
+                        </p>
+
+                        <a href="exposicao-historia.html"
+                           class="btn-saiba-mais">
+                            Saiba mais ➜
+                        </a>
+                    </div>
+
+                </article>
+
             </div>
 
-            <div class="banner">
-                <img src="imagens/banner.png">
-            </div>
-            <br>
+        </section>
 
-            <h1 class="h1">
-                    Exposições em Destaque :    
-            </h1>
-                <br><br>
+        <hr class="hr">
 
-                <div class="exposicoesline">
-
-                    <div class="exposicoes">
-                        <h2>exposicão 1</h2>
-                    </div>
-
-                    <div class="exposicoes">
-                        <h2>exposicão 2</h2>
-                    </div>
-
-                    <div class="exposicoes">
-                        <h2>exposicão 3</h2>
-                    </div>
-
-                    <div class="exposicoes">
-                        <h2>exposicão 4</h2>
-                    </div>
-
-                </div>
-                
-            <hr class="hr">
-
-            <div class="flex">
-
-                <div class="endereco">
-
-                    <img src="imagens/maps.png">
-
-                    <h1 class="lugar">Endereço: Rua das Colônias, 64 – Ipiranga</h1>
-                    <h1 class="endereco"> São Paulo/SP – CEP 03201-030</h1>     
-
-                </div>
-
-                <div class="contato">
-
-                    <img src="imagens/contato.png">
-
-                    <h1 class="lugar">De terça a domingo, das 10 às 17h.</h1>
-                    <h1 class="endereco"> Última entrada: 16h. Adquira seu ingresso  <a class="linkzao" href="comprar.html">Adquira Já !</a> </h1>
-                    <h1 </h1>
-                    
-
-                </div>
-                
-            </div>
-
-<!-- <div class="contato">
-
-    <div class="conteudo-esquerda">
-        <img class="imagem-esquerda" src="imagens/maps.png">
-
-        <div class="texto-contato">
-            <h1>Museu do Brasil - Endereço:</h1>
+        <section class="informacoes">
 
             <div class="endereco">
-                <h1>Rua das Colônias, 64 – Ipiranga – São Paulo/SP – CEP 03201-030</h1>
+
+                <img src="imagens/maps.png" alt="Localização do museu">
+
+                <div class="texto-info">
+                    <h2>Nosso Endereço</h2>
+
+                    <p>Rua das Colônias, 64 – Ipiranga</p>
+                    <p>São Paulo/SP – CEP 03201-030</p>
+                </div>
+
             </div>
-        </div>
-    </div>
 
-    <div class="conteudo-direita">
-        <img class="imagem-horarios" src="imagens/contato.png">
-    </div>
+            <div class="contato">
 
-</div>  -->
+                <img src="imagens/contato.png"
+                     alt="Informações de funcionamento">
+
+                <div class="texto-info">
+                    <h2>Horário de Funcionamento</h2>
+
+                    <p>De terça a domingo, das 10h às 17h.</p>
+
+                    <p>
+                        Adquira seu ingresso:
+                        <a class="linkzao" href="ingresso.html">
+                            Adquira Já!
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Museu do Brasil - Todos os direitos reservados.</p>
+    </footer>
 
 </body>
-</html>
 
+</html>
