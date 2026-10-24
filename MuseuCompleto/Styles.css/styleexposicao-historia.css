@@ -1,8 +1,11 @@
+
+/* CONFIGURAÇÕES GERAIS */
 body {
     margin: 0;
-    background-image: url('../imagens/fundo.png'); 
+    padding: 0;
+    background-image: url('../imagens/fundo.png');
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: #f5f2e8;
@@ -41,44 +44,54 @@ section {
     box-sizing: border-box;
 }
 
-
+/* MENU DE NAVEGAÇÃO PADRÃO DO MUSEU */
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    gap: 35px;
+    padding: 15px 25px;
+    flex-wrap: wrap;
 }
 
 .logo {
-    width: 200px;
-    height: 140px;
-    padding-left: 5%;
-    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 140px;
+    height: 150px;
+    object-fit: contain;
 }
 
 .descer {
-    padding-top: 38px;
-    font-size: 20px;
-}
-
-.descer h2 {
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .descer a {
-    text-decoration: none;
-    color: #123d35;
-    padding: 0 20px;
     font-size: 20px;
     font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #123d35;
+    transition: 0.3s;
 }
 
 .descer a:hover {
-    color: #f4c928;
+    background-color: rgba(7, 87, 11, 0.12);
+    color: #034006;
 }
 
-
-.banner-detalhe  {
+/* BANNER */
+.banner-detalhe {
     background-image: url("../imagens/banner-historia.jpg");
     background-size: cover;
     background-position: center;
@@ -86,7 +99,6 @@ section {
     max-width: 1200px;
     margin: 30px auto;
     padding: 60px 40px;
-    box-sizing: border-box;
     border-radius: 15px;
 }
 
@@ -116,6 +128,7 @@ section {
     font-size: 16px;
 }
 
+/* INTRODUÇÃO */
 .introducao-detalhe {
     display: flex;
     gap: 40px;
@@ -134,6 +147,7 @@ img.imagem-detalhe {
     width: 55%;
 }
 
+/* LINHA DO TEMPO */
 .linha-do-tempo {
     background-color: #e6eee7;
     padding: 40px 30px;
@@ -158,19 +172,19 @@ img.imagem-detalhe {
 }
 
 .momento {
-    width: 18%;
+    width: 24%;
     text-align: center;
     position: relative;
 }
 
-.momento:before {
+.momento::before {
     content: "";
     display: block;
     width: 14px;
     height: 14px;
     background-color: #087653;
     border-radius: 50%;
-    margin: -23px auto 15px auto;
+    margin: -23px auto 15px;
 }
 
 .momento h3 {
@@ -180,62 +194,105 @@ img.imagem-detalhe {
 .momento p {
     font-size: 14px;
 }
+
+/* MOMENTOS MARCANTES */
 .momentos {
     padding: 40px 0;
 }
 
-.cards {
+/* GRADE DOS DOIS CARDS */
+.grid-cards {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
     margin-top: 20px;
 }
 
-.card {
-    background-color: #e6eee7;
-    border-radius: 6px;
-    padding: 12px;
-    box-sizing: border-box;
+/* CARDS NO PADRÃO DA PÁGINA PRINCIPAL */
+.card-exposicao {
+    min-width: 0;
+    background-color: #f8f6ee;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    border: 1px solid #e2ded0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-exposicao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+}
+
+/* IMAGENS DOS CARDS */
+.card-thumb {
+    width: 45%;
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.card-thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 230px;
+    object-fit: cover;
+}
+
+/* TEXTO DOS CARDS */
+.card-conteudo {
+    width: 55%;
+    min-width: 0;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
-.card img {
-    width: 100%;
-    height: 130px;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.card h3 {
-    color: #123d35;
-    font-size: 17px;
-    margin: 10px 0 5px 0;
-}
-
-.card p {
+.categoria-texto {
+    color: #07523d;
     font-size: 13px;
-    margin-bottom: 10px;
-}
-
-.card a {
-    display: inline-block;
-    border: 1px solid #087653;
-    color: #087653;
-    text-decoration: none;
-    padding: 7px 12px;
-    border-radius: 20px;
-    font-size: 13px;
-    text-align: center;
     font-weight: bold;
+    margin: 0 0 8px;
 }
 
-.card a:hover {
-    background-color: #087653;
+.card-conteudo h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #07523d;
+    line-height: 1.4;
+}
+
+.descricao-card {
+    font-size: 13px;
+    color: #555;
+    margin: 3px 0;
+    line-height: 1.6;
+}
+
+/* BOTÃO SAIBA MAIS */
+.btn-saiba-mais {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: #07523d;
     color: white;
+    padding: 9px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.2s ease;
 }
 
+.btn-saiba-mais:hover {
+    background-color: #053b2c;
+}
+
+/* CURIOSIDADES */
 .curiosidades-secao {
     background-color: #e6eee7;
     padding: 40px 30px;
@@ -263,6 +320,7 @@ img.imagem-detalhe {
 
 .texto-curiosidades li {
     margin-bottom: 10px;
+    line-height: 1.5;
 }
 
 .imagem-curiosidades {
@@ -277,11 +335,12 @@ img.imagem-detalhe {
     border-radius: 6px;
 }
 
-
+/* TABELA E FONTES */
 .informacoes {
     padding: 40px 0;
     display: flex;
     gap: 40px;
+    align-items: flex-start;
 }
 
 .tabela-historica {
@@ -301,6 +360,7 @@ img.imagem-detalhe {
     margin-bottom: 5px;
 }
 
+/* TABELA HISTÓRICA */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -321,6 +381,7 @@ td {
     font-size: 14px;
 }
 
+/* FONTES DE PESQUISA */
 .lista-fontes {
     background-color: #e6eee7;
     padding: 15px;
@@ -347,7 +408,7 @@ td {
     text-decoration: underline;
 }
 
-
+/* RODAPÉ */
 footer,
 .rodape {
     background-color: #064f3b;
@@ -363,9 +424,14 @@ footer,
     letter-spacing: 2px;
 }
 
+/* TABLETS */
 @media (max-width: 900px) {
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
+    .center {
+        gap: 15px;
+    }
+
+    .grid-cards {
+        grid-template-columns: 1fr;
     }
 
     .timeline {
@@ -381,7 +447,7 @@ footer,
         margin-bottom: 20px;
     }
 
-    .momento:before {
+    .momento::before {
         margin: 0;
         position: absolute;
         left: -29px;
@@ -401,5 +467,84 @@ footer,
     .tabela-historica,
     .fontes {
         width: 100%;
+    }
+
+    .imagem-curiosidades {
+        height: 260px;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 500px) {
+    .center {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .logo img {
+        width: 110px;
+        height: 120px;
+    }
+
+    .descer {
+        gap: 5px;
+    }
+
+    .descer a {
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    .banner-detalhe {
+        padding: 40px 20px;
+    }
+
+    .conteudo-banner h1 {
+        font-size: 28px;
+    }
+
+    .linha-do-tempo,
+    .secao-detalhe {
+        padding: 30px 20px;
+    }
+
+    .card-exposicao {
+        flex-direction: column;
+    }
+
+    .card-thumb {
+        width: 100%;
+        height: 180px;
+    }
+
+    .card-thumb img {
+        min-height: 0;
+        height: 100%;
+    }
+
+    .card-conteudo {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .curiosidades-secao {
+        padding: 30px 20px;
+    }
+
+    .imagem-curiosidades {
+        height: 200px;
+    }
+
+    .informacoes {
+        gap: 30px;
+    }
+
+    .tabela-historica {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 430px;
     }
 }

@@ -1,8 +1,10 @@
+
+/* CONFIGURAÇÕES GERAIS */
 body {
     margin: 0;
-    background-image: url('../imagens/fundo.png'); 
+    background-image: url('../imagens/fundo.png');
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: #f5f2e8;
@@ -39,64 +41,56 @@ p {
 section {
     box-sizing: border-box;
 }
+
+/* MENU DE NAVEGAÇÃO PADRÃO DO MUSEU */
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    gap: 35px;
+    padding: 15px 25px;
+    flex-wrap: wrap;
 }
 
 .logo {
-    width: 200px;
-    height: 140px;
-    padding-left: 5%;
-    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 140px;
+    height: 150px;
+    object-fit: contain;
 }
 
 .descer {
-    padding-top: 38px;
-    font-size: 20px;
-}
-
-.descer h2 {
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .descer a {
-    text-decoration: none;
-    color: #123d35;
-    padding: 0 20px;
     font-size: 20px;
     font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #123d35;
+    transition: 0.3s;
 }
 
 .descer a:hover {
-    color: #f4c928; 
+    background-color: rgba(7, 87, 11, 0.12);
+    color: #034006;
 }
 
-nav ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    list-style: none;
-    margin-left: 25px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #f4c928;
-}
-
+/* BANNER PRINCIPAL */
 .banner-detalhe {
-    background-image: url("../imagens/banner-brasil-atual.jpg");
+    background-image: url("../imagens/banner-republica-brasil-atual.jpg");
     background-size: cover;
     background-position: center;
     width: 90%;
@@ -106,6 +100,7 @@ nav a:hover {
     box-sizing: border-box;
     border-radius: 15px;
 }
+
 .conteudo-banner {
     max-width: 550px;
 }
@@ -128,11 +123,12 @@ nav a:hover {
     font-size: 16px;
 }
 
+/* INTRODUÇÃO DOS TEMAS */
 .introducao-detalhe {
     display: flex;
     gap: 40px;
     align-items: center;
-    padding: 50px 0
+    padding: 50px 0;
 }
 
 img.imagem-detalhe {
@@ -146,6 +142,21 @@ img.imagem-detalhe {
     width: 55%;
 }
 
+.titulo-periodo {
+    color: #07523d;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+/* SEPARAÇÃO ENTRE REPÚBLICA E BRASIL ATUAL */
+.secao-brasil-atual {
+    border-top: 2px solid #d9aa24;
+    margin-top: 30px;
+}
+
+/* SEÇÕES DE CONTEÚDO */
 .secao-detalhe {
     background-color: #e6eee7;
     padding: 40px 30px;
@@ -156,12 +167,35 @@ img.imagem-detalhe {
     margin-top: 0;
 }
 
+/* LISTAS */
+.lista-detalhe {
+    background-color: #e6eee7;
+    padding: 10px 0;
+    border-left: 5px solid #d9aa24;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
+.lista-detalhe ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.lista-detalhe li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.lista-detalhe li:last-child {
+    margin-bottom: 0;
+}
+
+/* CURIOSIDADES */
 .curiosidade-detalhe {
     background-color: #07523d;
     color: white;
     padding: 35px 30px;
-    margin: 30px 0; 
+    margin: 30px 0;
     border-radius: 6px;
 }
 
@@ -183,6 +217,7 @@ img.imagem-detalhe {
     margin-bottom: 0;
 }
 
+/* FONTES DE PESQUISA */
 .fontes-detalhe {
     padding: 40px 20px;
 }
@@ -206,6 +241,7 @@ img.imagem-detalhe {
     text-decoration: underline;
 }
 
+/* BOTÃO DE VOLTAR */
 .voltar-historia {
     padding: 20px;
     text-align: center;
@@ -225,7 +261,7 @@ img.imagem-detalhe {
     color: white;
 }
 
-
+/* RODAPÉ */
 footer,
 .rodape {
     background-color: #064f3b;
@@ -240,7 +276,12 @@ footer,
     font-size: 13px;
     letter-spacing: 2px;
 }
+
+/* TABLETS */
 @media (max-width: 800px) {
+    .center {
+        gap: 15px;
+    }
 
     .introducao-detalhe {
         display: block;
@@ -260,7 +301,27 @@ footer,
     }
 }
 
+/* CELULARES */
 @media (max-width: 500px) {
+    .center {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .logo img {
+        width: 110px;
+        height: 120px;
+    }
+
+    .descer {
+        gap: 5px;
+    }
+
+    .descer a {
+        font-size: 15px;
+        padding: 8px;
+    }
 
     .banner-detalhe {
         padding: 40px 20px;
