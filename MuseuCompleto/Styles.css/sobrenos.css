@@ -64,8 +64,6 @@ main {
     margin: auto;
 }
 
-/* BANNER */
-
 .banner {
     min-height: 350px;
     border-radius: 15px;
@@ -121,7 +119,6 @@ main {
     background: #ffda69;
 }
 
-/* HISTÓRIA DO MUSEU */
 
 .origem {
     display: grid;
@@ -156,8 +153,6 @@ main {
     border-radius: 12px;
 }
 
-
-/* LINKS INFERIORES */
 
 .informacoes {
     display: flex;
@@ -211,7 +206,6 @@ footer p {
     color: #e0e8df;
 }
 
-/* RESPONSIVIDADE */
 
 @media (max-width: 760px) {
     header {
