@@ -8,7 +8,6 @@
 </head>
 <body>
 
-    <!-- MENU DE NAVEGAÇÃO -->
     <header>
         <div class="center">
             <div>
@@ -18,16 +17,13 @@
 
             <nav class="descer">
                 <h2>
-                    <a href="sobrenos.html">Sobre nós</a>
-                    <a href="exposicoes.html">Exposições</a>
-                    <a href="programacoes.html">Programações</a>
-                    <a href="contato.html">Contato</a>
+                    <a href="PaginaPrincipal.html" target="_blank">Página Principal</a>
+                    <a href="exposicoes.html" target="_blank">Exposições</a>
+                    <a href="sobrenos.html" target="_blank">Sobre nós</a>
                 </h2>
             </nav>
         </div>
     </header>
-
-    <!-- BANNER PRINCIPAL DO FORMULÁRIO -->
    
     <section class="banner-detalhe">
         <div class="conteudo-banner">
@@ -41,7 +37,6 @@
         </div>
     </section>
 
-    <!-- CONTEÚDO PRINCIPAL -->
     <main>
         <section class="container-formulario">
             <div class="card-formulario">
@@ -52,6 +47,17 @@
                 </div>
 
                 <form action="#" method="POST" class="form-compra">
+
+                    <div class="campo">
+                        <label for="text">Qual Exposição deseja visitar ?</label>
+                         <select id="tipo-ingresso" name="tipo-ingresso" required>
+                            <option value="" disabled selected>Selecione o ingresso</option>
+                            <option value="exposicao">Exposição de futebol</option>
+                            <option value="exposicao">Exposição de cultura</option>
+                            <option value="exposicao">Exposição da historia do Brasil</option>
+                            <option value="exposicao">Exposição das maravilhas do Brasil</option>
+                        </select>
+                    </div>
                     
                     <div class="campo">
                         <label for="nome">Nome completo</label>
@@ -78,7 +84,6 @@
                         </select>
                     </div>
 
-                    <!-- FORMA DE PAGAMENTO -->
                     <div class="campo">
                         <label for="forma-pagamento">Forma de pagamento</label>
                         <select id="forma-pagamento" name="forma-pagamento" required>
@@ -99,8 +104,7 @@
             </div>
         </section>
     </main>
-
-    <!-- RODAPÉ INSTITUCIONAL -->
+    
     <footer class="rodape">
         <p>MUSEU DO BRASIL</p>
         <p>Nossa história, nossa gente, nossa terra.</p>
