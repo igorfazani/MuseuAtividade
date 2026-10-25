@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -10,32 +11,32 @@
 
 <body>
 
-    <!-- MENU DE NAVEGAÇÃO -->
+    <!-- MENU DE NAVEGAÇÃO PADRÃO DO MUSEU -->
     <header>
         <div class="center">
-            <div>
-                <img class="logo" src="imagens/logo.png" alt="Logo do site">
+
+            <div class="logo">
+                <img src="imagens/logo.png" alt="Logo do Museu">
             </div>
 
             <nav class="descer">
-                <h2>
-                    <a href="sobrenos.html">Sobre nós</a>
-                    <a href="exposicoes.html">Exposições</a>
-                    <a href="programacoes.html">Programações</a>
-                    <a href="contato.html">Contato</a>
-                </h2>
+                <a href="PaginaPrincipal.html">Página Principal</a>
+                <a href="sobrenos.html">Sobre nós</a>
+                <a href="exposicoes.html">Exposições</a>
+                <a href="ingresso.html">Garanta seu Ingresso</a>
             </nav>
+
         </div>
     </header>
 
-    
+    <!-- BANNER DA EXPOSIÇÃO -->
     <section class="banner-detalhe">
         <div class="conteudo-banner">
             <p>EXPOSIÇÃO</p>
             <h1>História do <strong>Brasil</strong></h1>
             <p>
-                Uma viagem pelo tempo, desde os primeiros
-                povos até os dias atuais.
+                Uma viagem pelo tempo, da colonização portuguesa
+                às transformações do Brasil atual.
             </p>
         </div>
     </section>
@@ -44,7 +45,7 @@
 
         <!-- SOBRE A EXPOSIÇÃO -->
         <section class="introducao-detalhe">
-            <img src="imagens/historia-brasil.jpg" 
+            <img src="imagens/historia-brasil.jpg"
                  alt="Paisagem representando diferentes aspectos da história do Brasil"
                  class="imagem-detalhe">
 
@@ -68,10 +69,6 @@
             </div>
 
             <div class="timeline">
-                <div class="momento">
-                    <h3>Antes de 1500</h3>
-                    <p>Povos indígenas e suas culturas</p>
-                </div>
 
                 <div class="momento">
                     <h3>1500 – 1822</h3>
@@ -92,6 +89,7 @@
                     <h3>Século XX – Atualidade</h3>
                     <p>Brasil moderno e contemporâneo</p>
                 </div>
+
             </div>
         </section>
 
@@ -99,57 +97,75 @@
         <section class="momentos">
             <div class="titulo-secao">
                 <p>MOMENTOS MARCANTES</p>
-                <h2>Conheça os principais eventos</h2>
+                <h2>Conheça os principais períodos</h2>
             </div>
 
-            <div class="cards">
-                <!-- CARD 1 -->
-                <article class="card">
-                    <img src="imagens/povos-indigenas.jpg" alt="Povos indígenas do Brasil">
-                    <h3>Povos indígenas</h3>
-                    <p>A diversidade cultural e as primeiras populações do território brasileiro.</p>
-                    <a href="povos-indigenas.html">Saiba mais</a>
+            <div class="grid-cards">
+
+                <!-- CARD 1: COLONIZAÇÃO E INDEPENDÊNCIA -->
+                <article class="card-exposicao">
+
+                    <div class="card-thumb">
+                        <img src="imagens/colonizacao-independencia.jpg"
+                             alt="Representação histórica do Brasil colonial">
+                    </div>
+
+                    <div class="card-conteudo">
+                        <p class="categoria-texto">📜 História do Brasil</p>
+
+                        <h3>Colonização e Independência</h3>
+
+                        <p class="descricao-card">
+                            Da chegada dos portugueses em 1500 à Independência
+                            de 1822, conheça os acontecimentos que marcaram
+                            a formação do Brasil.
+                        </p>
+
+                        <a href="colonizacao-independencia.html"
+                           class="btn-saiba-mais">
+                            Saiba mais ➜
+                        </a>
+                    </div>
+
                 </article>
 
-                <!-- CARD 2 -->
-                <article class="card">
-                    <img src="imagens/colonizacao.jpg" alt="Representação da colonização do Brasil">
-                    <h3>Colonização</h3>
-                    <p>A chegada dos portugueses e o início da exploração do território.</p>
-                    <a href="colonizacao.html">Saiba mais</a>
+                <!-- CARD 2: REPÚBLICA E BRASIL ATUAL -->
+                <article class="card-exposicao">
+
+                    <div class="card-thumb">
+                        <img src="imagens/republica-brasil-atual.jpg"
+                             alt="Representação da República e do Brasil contemporâneo">
+                    </div>
+
+                    <div class="card-conteudo">
+                        <p class="categoria-texto">🏛️ História do Brasil</p>
+
+                        <h3>República e Brasil Atual</h3>
+
+                        <p class="descricao-card">
+                            Da Proclamação da República em 1889 às transformações
+                            do Brasil contemporâneo, conheça as mudanças
+                            políticas e sociais do país.
+                        </p>
+
+                        <a href="republica-brasil-atual.html"
+                           class="btn-saiba-mais">
+                            Saiba mais ➜
+                        </a>
+                    </div>
+
                 </article>
 
-                <!-- CARD 3 -->
-                <article class="card">
-                    <img src="imagens/independencia.jpg" alt="Representação da Independência do Brasil">
-                    <h3>Independência</h3>
-                    <p>O grito do Ipiranga marcou a independência e o fim do domínio português.</p>
-                    <a href="independencia.html">Saiba mais</a>
-                </article>
-
-                <!-- CARD 4 -->
-                <article class="card">
-                    <img src="imagens/republica.jpg" alt="Representação da Proclamação da República">
-                    <h3>República</h3>
-                    <p>O fim da monarquia e o início de um novo período político.</p>
-                    <a href="republica.html">Saiba mais</a>
-                </article>
-
-                <!-- CARD 5 -->
-                <article class="card">
-                    <img src="imagens/brasil-atual.jpg" alt="Imagem relacionada ao Brasil atual">
-                    <h3>Brasil atual</h3>
-                    <p>Os desafios e as conquistas do país no século XXI.</p>
-                    <a href="brasil-atual.html">Saiba mais</a>
-                </article>
             </div>
         </section>
 
         <!-- CURIOSIDADES -->
         <section class="curiosidades-secao">
+
             <div class="texto-curiosidades">
                 <p>CURIOSIDADES</p>
                 <h2>Você sabia?</h2>
+
                 <ul>
                     <li>O Brasil foi o último país da América a se tornar independente.</li>
                     <li>O nome "Brasil" vem de uma árvore chamada pau-brasil.</li>
@@ -159,12 +175,15 @@
             </div>
 
             <div class="imagem-curiosidades">
-                <img src="imagens/curiosidades-brasil.jpg" alt="Imagem relacionada à história do Brasil">
+                <img src="imagens/curiosidades-brasil.jpg"
+                     alt="Imagem relacionada à história do Brasil">
             </div>
+
         </section>
 
-        <!-- TABELA E FONTES -->
+        <!-- TABELA HISTÓRICA E FONTES -->
         <section class="informacoes">
+
             <div class="tabela-historica">
                 <p>TABELA HISTÓRICA</p>
                 <h2>Períodos e acontecimentos</h2>
@@ -177,32 +196,32 @@
                             <th>Data</th>
                         </tr>
                     </thead>
+
                     <tbody>
-                        <tr>
-                            <td>Povos indígenas</td>
-                            <td>Chegada dos primeiros habitantes</td>
-                            <td>Antes de 1500</td>
-                        </tr>
                         <tr>
                             <td>Colonização</td>
                             <td>Chegada dos portugueses</td>
                             <td>1500</td>
                         </tr>
+
                         <tr>
                             <td>Independência</td>
                             <td>Grito do Ipiranga</td>
                             <td>1822</td>
                         </tr>
+
                         <tr>
                             <td>Império</td>
                             <td>Dom Pedro II e fim da escravidão</td>
                             <td>1840 – 1889</td>
                         </tr>
+
                         <tr>
                             <td>República</td>
                             <td>Proclamação da República</td>
                             <td>1889</td>
                         </tr>
+
                         <tr>
                             <td>Brasil contemporâneo</td>
                             <td>Redemocratização e Constituição de 1988</td>
@@ -216,17 +235,48 @@
             <div class="fontes">
                 <p>FONTES DE PESQUISA</p>
                 <h2>Saiba mais</h2>
-                <p>Para conhecer mais sobre a história do Brasil, acesse as fontes abaixo:</p>
+                <p>
+                    Para conhecer mais sobre a história do Brasil,
+                    acesse as fontes abaixo:
+                </p>
 
                 <div class="lista-fontes">
                     <ul>
-                        <li><a href="https://bndigital.bn.gov.br/" target="_blank" rel="noopener noreferrer">Biblioteca Nacional Digital</a></li>
-                        <li><a href="https://museudoipiranga.org.br/" target="_blank" rel="noopener noreferrer">Museu do Ipiranga</a></li>
-                        <li><a href="https://www.ibge.gov.br/" target="_blank" rel="noopener noreferrer">Instituto Brasileiro de Geografia e Estatística (IBGE)</a></li>
-                        <li><a href="https://brasilescola.uol.com.br/historiab" target="_blank" rel="noopener noreferrer">História do Brasil – Brasil Escola</a></li>
+                        <li>
+                            <a href="https://bndigital.bn.gov.br/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Biblioteca Nacional Digital
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://museudoipiranga.org.br/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Museu do Ipiranga
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.ibge.gov.br/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Instituto Brasileiro de Geografia e Estatística (IBGE)
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://brasilescola.uol.com.br/historiab/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                História do Brasil — Brasil Escola
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
+
         </section>
 
     </main>
