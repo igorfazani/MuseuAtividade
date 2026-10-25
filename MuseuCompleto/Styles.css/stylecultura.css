@@ -1,0 +1,314 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../imagens/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #f5f2e8;
+    color: #123d35;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+h2 {
+    color: #073f34;
+    font-size: 28px;
+    margin-top: 8px;
+}
+
+h3 {
+    color: #07523d;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+section {
+    box-sizing: border-box;
+}
+
+/* MENU DE NAVEGAÇÃO PADRÃO DO MUSEU */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 15px 25px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 140px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.descer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.descer a {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #123d35;
+    transition: 0.3s;
+}
+
+.descer a:hover {
+    background-color: rgba(7, 87, 11, 0.12);
+    color: #034006;
+}
+
+/* BANNER */
+.banner-detalhe {
+    background-image: url("../imagens/banner-cultura.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 60px 40px;
+    border-radius: 15px;
+}
+
+.conteudo-banner {
+    max-width: 550px;
+}
+
+.conteudo-banner p:first-child {
+    color: #f4c928;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.conteudo-banner h1 {
+    color: white;
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+.conteudo-banner h1 strong {
+    color: #f4c928;
+}
+
+.conteudo-banner p:last-child {
+    color: white;
+    font-size: 16px;
+}
+
+.cultura,
+.modalidades {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 0 50px;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.titulo-secao > p:not(.categoria) {
+    color: #526158;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.grade-cultura {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.cartao {
+    background-color: #cfcdbe;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.cartao:hover {
+    transform: translateY(-5px);
+}
+
+.cartao img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.cartao-conteudo {
+    padding: 20px;
+}
+
+.cartao-conteudo span {
+    color: #9b7617;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.cartao h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+.cartao p {
+    color: #42534a;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.grade-modalidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.grade-modalidades article {
+    background-color: #cfcdbe;
+    border-radius: 13px;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 3px solid #c49a29;
+}
+
+.grade-modalidades article > span {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.grade-modalidades h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.grade-modalidades p {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #526158;
+}
+
+.secao-diversidade {
+    background-color: #e6eee7;
+    padding: 40px 30px;
+    margin: 25px 0;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.texto-diversidade {
+    width: 50%;
+}
+
+.texto-diversidade p:first-child {
+    color: #087653;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.texto-diversidade h2 {
+    margin-top: 5px;
+}
+
+.texto-diversidade li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.imagem-diversidade {
+    width: 50%;
+    height: 270px;
+}
+
+.imagem-diversidade img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.mensagem-final {
+    width: 90%;
+    margin: 0 auto 40px;
+    padding: 45px 20px;
+    text-align: center;
+    color: white;
+    background-color: #123d35;
+    border-radius: 15px;
+}
+
+.mensagem-final h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.15;
+    margin-bottom: 15px;
+    color: #efbd37;
+}
+
+.mensagem-final > p:not(.categoria) {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #0748d4;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 12px 18px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #4873cf;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+}
