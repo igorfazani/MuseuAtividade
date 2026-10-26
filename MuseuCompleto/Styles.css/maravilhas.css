@@ -678,3 +678,10 @@ section {
         padding-left: 15px;
     }
 }
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+}

@@ -219,23 +219,6 @@ section {
 }
 
 
-/* RODAPÉ */
-
-footer,
-.rodape {
-    background-color: #064f3b;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: 30px;
-}
-
-.rodape p {
-    margin: 5px;
-    font-size: 13px;
-    letter-spacing: 2px;
-}
-
 /* RESPONSIVIDADE */
 
 @media (max-width: 800px) {
@@ -250,4 +233,11 @@ footer,
     .card-formulario {
         padding: 30px 20px;
     }
+}
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
 }

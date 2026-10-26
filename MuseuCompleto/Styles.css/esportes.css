@@ -90,27 +90,17 @@ section {
 }
 
 .banner {
-    width: 90%;
-    min-height: 430px;
-    margin: 20px auto 45px;
+    min-height: 350px;
     border-radius: 15px;
     overflow: hidden;
     display: flex;
     align-items: center;
-    color: white;
-
-    background-image:
-        linear-gradient(
-            90deg,
-            rgba(9, 48, 37, 0.96),
-            rgba(9, 48, 37, 0.76) 45%,
-            rgba(9, 48, 37, 0.12)
-        ),
-        url("img/esportes.png");
-
+    background:
+        linear-gradient(10deg, rgba(4, 54, 42, .70), rgba(4, 54, 42, .10)),
+        url(../imagens/banner-esportes.jpg.png);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    color: white;
 }
 
 .banner-conteudo {
@@ -305,6 +295,7 @@ section {
     font-size: clamp(30px, 4vw, 42px);
     line-height: 1.15;
     margin-bottom: 15px;
+    color: white;
 }
 
 .mensagem-final > p:not(.categoria) {
@@ -314,18 +305,10 @@ section {
 }
 
 footer {
-    background-color: #123d35;
-    color: #f5f2e8;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
     text-align: center;
-    padding: 28px 15px;
-}
-
-footer h3 {
-    font-family: Georgia, 'Times New Roman', serif;
-    margin-bottom: 8px;
-}
-
-footer p {
-    font-size: 12px;
 }
 

@@ -134,7 +134,7 @@ section {
 .exposicao {
     display: flex;
     align-items: center;
-    width: 90%;
+    width: 75%;
     height: 250px;
     margin: 30px auto;
     border-radius: 15px;
@@ -163,4 +163,12 @@ section {
     align-items: center;
     font-size: 15px;
     color: #f5f2e8;
+}
+footer {
+    margin: 40px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    width: 1000%;
 }

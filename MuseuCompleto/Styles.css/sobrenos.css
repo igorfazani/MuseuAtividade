@@ -96,8 +96,8 @@ section {
     display: flex;
     align-items: center;
     background:
-        linear-gradient(90deg, rgba(4, 54, 42, .98), rgba(4, 54, 42, .55)),
-        url(img/museu.png);
+        linear-gradient(10deg, rgba(4, 54, 42, .70), rgba(4, 54, 42, .10)),
+        url(../imagens/fachada-museu.jpg);
     background-size: cover;
     background-position: center;
     color: white;
@@ -214,19 +214,9 @@ section {
 }
 
 footer {
-    text-align: center;
-    background: #103d30;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
     color: white;
-    padding: 25px 15px;
-    font-size: 11px;
-}
-
-footer h3 {
-    font-family: Georgia, serif;
-    margin-bottom: 8px;
-}
-
-footer p {
-    margin-bottom: 5px;
-    color: #e0e8df;
+    text-align: center;
 }
