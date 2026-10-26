@@ -1,19 +1,48 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('../imagens/Fundo.png');
-    background-repeat: no-repeat;
+    background-image: url('../imagens/fundo.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-color: #f5f2e8;
     color: #123d35;
-}
-a {
-    text-decoration: none;
-    color: rgb(7, 87, 11);
+    font-family: Arial, sans-serif;
 }
 
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+h2 {
+    color: #073f34;
+    font-size: 28px;
+    margin-top: 8px;
+}
+
+h3 {
+    color: #07523d;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+section {
+    box-sizing: border-box;
+}
+
+/* MENU DE NAVEGAÇÃO PADRÃO DO MUSEU */
 .center {
     display: flex;
     justify-content: center;
@@ -22,6 +51,7 @@ a {
     padding: 15px 25px;
     flex-wrap: wrap;
 }
+
 .logo {
     display: flex;
     justify-content: center;
@@ -48,6 +78,8 @@ a {
     margin: 0;
     padding: 10px;
     border-radius: 5px;
+    text-decoration: none;
+    color: #123d35;
     transition: 0.3s;
 }
 
@@ -64,7 +96,7 @@ a {
 
 .banner img {
     display: block;
-    width: 80%;
+    width: 130%;
     height: 550px;
     object-fit: cover;
     border: 1px solid black;

@@ -1,54 +1,66 @@
-* {
+body {
     margin: 0;
     padding: 0;
+    background-image: url('../imagens/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #f5f2e8;
+    color: #123d35;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+h2 {
+    color: #073f34;
+    font-size: 28px;
+    margin-top: 8px;
+}
+
+h3 {
+    color: #07523d;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+section {
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    width: 100%;
-    background-color: #f8f6ed;
-    color: #103b32;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
-.cabecalho {
-    width: 100%;
-    min-height: 180px;
-
+/* MENU DE NAVEGAÇÃO PADRÃO DO MUSEU */
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    gap: 65px;
-    padding: 15px 30px;
-
-    background-color: #f8f6ed;
+    gap: 35px;
+    padding: 15px 25px;
+    flex-wrap: wrap;
 }
 
 .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
 }
 
 .logo img {
-    width: 100px;
-    height: 130px;
+    width: 140px;
+    height: 150px;
     object-fit: contain;
 }
 
@@ -61,13 +73,14 @@ img {
 }
 
 .descer a {
-    color: #034006;
     font-size: 20px;
     font-weight: bold;
     margin: 0;
     padding: 10px;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    text-decoration: none;
+    color: #123d35;
+    transition: 0.3s;
 }
 
 .descer a:hover {

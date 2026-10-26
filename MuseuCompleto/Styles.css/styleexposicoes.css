@@ -1,43 +1,91 @@
 body {
-     margin: 0;
+    margin: 0;
+    padding: 0;
+    background-image: url('../imagens/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-color: #f5f2e8;
     color: #123d35;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url('imagens-exposicoes/fundo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-family: Arial, sans-serif;
 }
 
-
-a{
-    text-decoration: none;
-    color: #123d35;
-    padding: 20px;
-    font-size: 20px;
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-
-.logo {
-    width: 200px;
-    height: 140px;
-    padding-left: 5%;
-    padding-top: 2%;
- 
-   
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
 }
+
+h2 {
+    color: #073f34;
+    font-size: 28px;
+    margin-top: 8px;
+}
+
+h3 {
+    color: #07523d;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+section {
+    box-sizing: border-box;
+}
+
+/* MENU DE NAVEGAÇÃO PADRÃO DO MUSEU */
 .center {
     display: flex;
-    justify-content: center;  
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 15px 25px;
+    flex-wrap: wrap;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 140px;
+    height: 150px;
+    object-fit: contain;
+}
 
 .descer {
-  padding-top: 38px;
-  font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
-.black {
-  color: rgb(0, 0, 0);
+.descer a {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #123d35;
+    transition: 0.3s;
+}
+
+.descer a:hover {
+    background-color: rgba(7, 87, 11, 0.12);
+    color: #034006;
 }
 
 .banner {
@@ -50,8 +98,8 @@ a{
 }
 .titulo-banner {
     position: absolute;
-    top: 25%;
-    left: 12%;
+    top: 40%;
+    left: 27%;
     color: #f0b41d;  
     font-size: 30px;
 }
@@ -68,6 +116,20 @@ a{
     left: 8%;
     color: #ffffff;  
     font-size: 18px;
+}
+.botao {
+    display: inline-block;
+    background-color: #40ac69;
+    color: #123d35;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 12px 18px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #40ac69;
 }
 .exposicao {
     display: flex;
