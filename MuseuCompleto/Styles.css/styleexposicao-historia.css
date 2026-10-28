@@ -408,6 +408,47 @@ td {
     text-decoration: underline;
 }
 
+/* MENSAGEM FINAL */
+
+.mensagem-final {
+    width: 90%;
+    margin: 0 auto 40px;
+    padding: 45px 20px;
+    text-align: center;
+    color: white;
+    background-color: #123d35;
+    border-radius: 15px;
+}
+
+.mensagem-final h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.15;
+    margin-bottom: 15px;
+    color: #efbd37;
+}
+
+.mensagem-final > p:not(.categoria) {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #0748d4;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 12px 18px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #4873cf;
+}
+
 /* RODAPÉ */
 footer,
 .rodape {
