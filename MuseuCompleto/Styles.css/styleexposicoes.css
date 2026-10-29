@@ -42,13 +42,12 @@ section {
     box-sizing: border-box;
 }
 
-/* MENU DE NAVEGAÇÃO PADRÃO DO MUSEU */
+
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 35px;
-    padding: 15px 25px;
     flex-wrap: wrap;
 }
 
@@ -141,7 +140,7 @@ section {
     background-color:#cfcdbe;
 }
 .exposicao img {
-    width: 600px;
+    width: 500px;
     height: 250px;
     border-radius: 3%;
 }
@@ -165,10 +164,9 @@ section {
     color: #f5f2e8;
 }
 footer {
-    margin: 40px;
     padding: 40px;
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
     text-align: center;
-    width: 1000%;
+    width: 100%;
 }

@@ -42,7 +42,6 @@ section {
     box-sizing: border-box;
 }
 
-/* MENU DE NAVEGAÇÃO PADRÃO DO MUSEU */
 .center {
     display: flex;
     justify-content: center;
@@ -208,20 +207,6 @@ section {
     line-height: 1.8;
 }
 
-@media (max-width: 600px) {
-    .introducao {
-        padding: 40px 7%;
-    }
-
-    .introducao h2 {
-        font-size: 30px;
-    }
-
-    .introducao div p {
-        font-size: 14px;
-    }
-}
-
 .maravilhas {
     width: 100%;
 }
@@ -335,7 +320,6 @@ section {
 
 .descricao {
     max-width: 480px;
-
     color: #53655e;
     font-size: 14px;
     line-height: 1.8;
@@ -343,10 +327,8 @@ section {
 .detalhes {
     display: flex;
     flex-wrap: wrap;
-
     gap: 20px;
     margin-top: 24px;
-
     color: #63756d;
     font-size: 11px;
 }
@@ -361,19 +343,15 @@ section {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-
     gap: 25px;
     margin-top: 25px;
     padding: 13px 18px;
-
     background-color: #103b32;
     border: 1px solid #103b32;
     border-radius: 2px;
-
     color: #ffffff;
     font-size: 10px;
     letter-spacing: 1px;
-
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -405,7 +383,6 @@ section {
 .frase-final h2 {
     max-width: 800px;
     margin: 0 auto;
-
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(26px, 3.4vw, 42px);
     font-weight: normal;
@@ -414,34 +391,26 @@ section {
 
 .frase-final h2 span {
     display: block;
-
     color: #5b8e6b;
     font-style: italic;
 }
 
 .assinatura {
     margin-top: 30px;
-
     color: #567d64;
     font-size: 10px;
     letter-spacing: 4px;
 }
 
-
 .rodape {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     gap: 30px;
     padding: 35px 6%;
-
     background-color: #052d25;
     color: #ffffff;
 }
-
-
-
 .logo-rodape img {
     width: 100px;
     height: 90px;
@@ -477,206 +446,6 @@ section {
 
 .contato a:hover {
     color: #ffffff;
-}
-
-@media (max-width: 900px) {
-
-    .cabecalho {
-        gap: 25px;
-    }
-
-    .logo img {
-        width: 90px;
-        height: 120px;
-    }
-
-    .descer {
-        gap: 12px;
-    }
-
-    .descer a {
-        font-size: 16px;
-    }
-
-    .banner {
-        min-height: 450px;
-    }
-
-    .conteudo-banner {
-        max-width: 75%;
-    }
-
-    .frase-banner {
-        display: none;
-    }
-
-    .maravilha {
-        grid-template-columns: 48% 52%;
-    }
-
-    .maravilha-invertida {
-        grid-template-columns: 52% 48%;
-    }
-
-    .imagem-maravilha {
-        min-height: 350px;
-    }
-
-    .texto-maravilha {
-        padding: 30px 7%;
-    }
-
-    .detalhes {
-        gap: 12px;
-    }
-
-    .rodape {
-        flex-wrap: wrap;
-    }
-
-}
-
-@media (max-width: 600px) {
-
-    .cabecalho {
-        min-height: auto;
-
-        flex-direction: column;
-        justify-content: center;
-
-        gap: 10px;
-        padding: 15px;
-    }
-
-    .logo img {
-        width: 85px;
-        height: 100px;
-    }
-
-    .descer {
-        justify-content: center;
-        gap: 5px;
-    }
-
-    .descer a {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    .banner {
-        min-height: 480px;
-        align-items: center;
-    }
-
-    .imagem-banner {
-        object-position: 65% center;
-    }
-
-    .filtro-banner {
-        background: linear-gradient(
-            90deg,
-            rgba(3, 34, 28, 0.94),
-            rgba(3, 34, 28, 0.60)
-        );
-    }
-
-    .conteudo-banner {
-        width: 100%;
-        max-width: 90%;
-
-        margin-left: 6%;
-        padding: 40px 0;
-    }
-
-    .subtitulo {
-        font-size: 9px;
-        letter-spacing: 2px;
-    }
-
-    .conteudo-banner h1 {
-        font-size: 43px;
-    }
-
-    .descricao-banner {
-        font-size: 13px;
-    }
-    .introducao {
-        grid-template-columns: 1fr;
-
-        gap: 15px;
-        padding: 40px 7%;
-    }
-
-    .introducao h2 {
-        font-size: 30px;
-    }
-
-    .maravilha,
-    .maravilha-invertida {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .maravilha-invertida .imagem-maravilha,
-    .maravilha-invertida .texto-maravilha {
-        order: initial;
-    }
-    .imagem-maravilha {
-        width: 100%;
-        min-height: 260px;
-
-        clip-path: polygon(
-            0 0,
-            100% 0,
-            98% 100%,
-            0 100%
-        );
-    }
-
-    .maravilha-invertida .imagem-maravilha {
-        clip-path: polygon(
-            0 0,
-            100% 0,
-            100% 100%,
-            2% 100%
-        );
-    }
-
-    .imagem-maravilha img {
-        min-height: 260px;
-        transform: none;
-        transition: none;
-    }
-
-    .maravilha:hover .imagem-maravilha img {
-        transform: none;
-    }
-
-    .texto-maravilha {
-        padding: 35px 7%;
-    }
-
-    .texto-maravilha h2 {
-        font-size: 32px;
-    }
-
-    .descricao {
-        font-size: 13px;
-    }
-
-    .frase-final {
-        padding: 55px 7%;
-    }
-
-    .rodape {
-        flex-direction: column;
-        align-items: flex-start;
-
-        padding: 35px 7%;
-    }
-    .rodape > p {
-        padding-left: 15px;
-    }
 }
 footer {
     margin-top: 40px;
