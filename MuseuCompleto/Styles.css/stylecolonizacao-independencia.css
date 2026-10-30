@@ -1,5 +1,3 @@
-
-/* CONFIGURAÇÕES GERAIS */
 body {
     margin: 0;
     padding: 0;
@@ -44,7 +42,6 @@ section {
     box-sizing: border-box;
 }
 
-/* MENU DE NAVEGAÇÃO PADRÃO DO MUSEU */
 .center {
     display: flex;
     justify-content: center;
@@ -90,7 +87,6 @@ section {
     color: #034006;
 }
 
-/* BANNER PRINCIPAL */
 .banner-detalhe {
     background-image: url("../imagens/banner-colonizacao-independencia.jpg");
     background-size: cover;
@@ -124,7 +120,6 @@ section {
     font-size: 16px;
 }
 
-/* INTRODUÇÃO DOS PERÍODOS */
 .introducao-detalhe {
     display: flex;
     gap: 40px;
@@ -156,7 +151,6 @@ img.imagem-detalhe {
     margin-top: 30px;
 }
 
-/* SEÇÕES DE CONTEÚDO */
 .secao-detalhe {
     background-color: #e6eee7;
     padding: 40px 30px;
@@ -167,7 +161,7 @@ img.imagem-detalhe {
     margin-top: 0;
 }
 
-/* LISTAS */
+
 .lista-detalhe {
     background-color: #e6eee7;
     padding: 10px 0;
@@ -189,7 +183,6 @@ img.imagem-detalhe {
     margin-bottom: 0;
 }
 
-/* CURIOSIDADES */
 .curiosidade-detalhe {
     background-color: #07523d;
     color: white;
@@ -216,7 +209,6 @@ img.imagem-detalhe {
     margin-bottom: 0;
 }
 
-/* FONTES */
 .fontes-detalhe {
     padding: 40px 20px;
 }
@@ -240,7 +232,6 @@ img.imagem-detalhe {
     text-decoration: underline;
 }
 
-/* BOTÃO DE VOLTAR */
 .voltar-historia {
     padding: 20px;
     text-align: center;
@@ -260,7 +251,6 @@ img.imagem-detalhe {
     color: white;
 }
 
-/* RODAPÉ */
 footer,
 .rodape {
     background-color: #064f3b;
@@ -276,72 +266,6 @@ footer,
     letter-spacing: 2px;
 }
 
-/* TABLETS */
-@media (max-width: 800px) {
-    .center {
-        gap: 15px;
-    }
-
-    .introducao-detalhe {
-        display: block;
-    }
-
-    img.imagem-detalhe,
-    .texto-detalhe {
-        width: 100%;
-    }
-
-    img.imagem-detalhe {
-        margin-bottom: 25px;
-    }
-
-    .conteudo-banner h1 {
-        font-size: 32px;
-    }
-}
-
-/* CELULARES */
-@media (max-width: 500px) {
-    .center {
-        flex-direction: column;
-        gap: 10px;
-        padding: 15px;
-    }
-
-    .logo img {
-        width: 110px;
-        height: 120px;
-    }
-
-    .descer {
-        gap: 5px;
-    }
-
-    .descer a {
-        font-size: 15px;
-        padding: 8px;
-    }
-
-    .banner-detalhe {
-        padding: 40px 20px;
-    }
-
-    .conteudo-banner h1 {
-        font-size: 28px;
-    }
-
-    .secao-detalhe {
-        padding: 30px 20px;
-    }
-
-    .curiosidade-detalhe {
-        padding: 30px 20px;
-    }
-
-    img.imagem-detalhe {
-        height: 220px;
-    }
-}
 footer {
     margin-top: 40px;
     padding: 20px;

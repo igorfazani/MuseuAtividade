@@ -1,4 +1,4 @@
-/* CONFIGURAÇÕES GERAIS */
+
 
 body {
     margin: 0;
@@ -44,7 +44,7 @@ section {
     box-sizing: border-box;
 }
 
-/* MENU DE NAVEGAÇÃO PADRÃO DO MUSEU */
+
 .center {
     display: flex;
     justify-content: center;
@@ -90,7 +90,7 @@ section {
     color: #034006;
 }
 
-/* BANNER PRINCIPAL */
+
 
 
 .banner-detalhe {
@@ -131,8 +131,6 @@ section {
     font-size: 16px;
 }
 
-/* CARD DO FORMULÁRIO */
-
 
 .container-formulario {
     display: flex;
@@ -162,7 +160,7 @@ section {
     margin-bottom: 25px;
 }
 
-/* Campos do formulário */
+
 .form-compra .campo {
     margin-bottom: 20px;
     display: flex;
@@ -195,7 +193,12 @@ section {
     border-color: #07523d;
 }
 
-/* Botão de Compra */
+.opcoes-contato {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
 .btn-comprar {
     width: 100%;
     background-color: #07523d;
@@ -218,22 +221,6 @@ section {
     background-color: #053b2c;
 }
 
-
-/* RESPONSIVIDADE */
-
-@media (max-width: 800px) {
-    .banner-detalhe {
-        padding: 50px 25px;
-    }
-
-    .conteudo-banner h1 {
-        font-size: 32px;
-    }
-
-    .card-formulario {
-        padding: 30px 20px;
-    }
-}
 footer {
     margin-top: 40px;
     padding: 20px;

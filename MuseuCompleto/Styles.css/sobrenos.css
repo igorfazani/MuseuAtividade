@@ -43,7 +43,6 @@ section {
     box-sizing: border-box;
 }
 
-/* MENU DE NAVEGAÇÃO PADRÃO DO MUSEU */
 .center {
     display: flex;
     justify-content: center;
@@ -123,7 +122,7 @@ section {
     margin-bottom: 18px;
 }
 
-.banner-texto > p:not(.categoria) {
+.banner-texto p {
     font-size: 13px;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -164,9 +163,9 @@ section {
     margin-bottom: 18px;
 }
 
-.origem .texto > p:not(.categoria) {
+.origem .texto p {
     color: #59665e;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.7;
     margin-bottom: 13px;
 }
@@ -179,38 +178,28 @@ section {
 }
 
 
-.informacoes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-    width: 100%;
-    padding: 22px 10px;
-    margin: 0 auto 25px;
-    border-top: 1px solid #e5e1d4;
-    border-bottom: 1px solid #e5e1d4;
+.mensagem-final {
+    width: 90%;
+    margin: 0 auto 40px;
+    padding: 45px 20px;
+    text-align: center;
+    color: white;
+    background-color: #123d35;
+    border-radius: 15px;
 }
 
-.informacoes div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex: 0 0 auto;
+.mensagem-final h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.15;
+    margin-bottom: 15px;
+    color: white;
 }
 
-.informacoes span {
-    font-size: 24px;
-    color: #a8872e;
-}
-
-.informacoes p {
-    font-size: 10px;
-    line-height: 1.6;
-    color: #68746c;
-}
-
-.informacoes strong {
-    color: #173b30;
+.mensagem-final p {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 22px;
 }
 
 footer {

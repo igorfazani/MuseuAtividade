@@ -1,5 +1,3 @@
-
-/* CONFIGURAÇÕES GERAIS */
 body {
     margin: 0;
     padding: 0;
@@ -44,7 +42,6 @@ section {
     box-sizing: border-box;
 }
 
-/* MENU DE NAVEGAÇÃO PADRÃO DO MUSEU */
 .center {
     display: flex;
     justify-content: center;
@@ -90,7 +87,6 @@ section {
     color: #034006;
 }
 
-/* BANNER */
 .banner-detalhe {
     background-image: url("../imagens/banner-historia.jpg");
     background-size: cover;
@@ -128,7 +124,6 @@ section {
     font-size: 16px;
 }
 
-/* INTRODUÇÃO */
 .introducao-detalhe {
     display: flex;
     gap: 40px;
@@ -147,7 +142,6 @@ img.imagem-detalhe {
     width: 55%;
 }
 
-/* LINHA DO TEMPO */
 .linha-do-tempo {
     background-color: #e6eee7;
     padding: 40px 30px;
@@ -195,12 +189,10 @@ img.imagem-detalhe {
     font-size: 14px;
 }
 
-/* MOMENTOS MARCANTES */
 .momentos {
     padding: 40px 0;
 }
 
-/* GRADE DOS DOIS CARDS */
 .grid-cards {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -208,7 +200,6 @@ img.imagem-detalhe {
     margin-top: 20px;
 }
 
-/* CARDS NO PADRÃO DA PÁGINA PRINCIPAL */
 .card-exposicao {
     min-width: 0;
     background-color: #f8f6ee;
@@ -225,7 +216,6 @@ img.imagem-detalhe {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
 }
 
-/* IMAGENS DOS CARDS */
 .card-thumb {
     width: 45%;
     position: relative;
@@ -241,7 +231,6 @@ img.imagem-detalhe {
     object-fit: cover;
 }
 
-/* TEXTO DOS CARDS */
 .card-conteudo {
     width: 55%;
     min-width: 0;
@@ -273,7 +262,6 @@ img.imagem-detalhe {
     line-height: 1.6;
 }
 
-/* BOTÃO SAIBA MAIS */
 .btn-saiba-mais {
     display: inline-block;
     align-self: flex-start;
@@ -292,7 +280,6 @@ img.imagem-detalhe {
     background-color: #053b2c;
 }
 
-/* CURIOSIDADES */
 .curiosidades-secao {
     background-color: #e6eee7;
     padding: 40px 30px;
@@ -335,7 +322,6 @@ img.imagem-detalhe {
     border-radius: 6px;
 }
 
-/* TABELA E FONTES */
 .informacoes {
     padding: 40px 0;
     display: flex;
@@ -360,7 +346,6 @@ img.imagem-detalhe {
     margin-bottom: 5px;
 }
 
-/* TABELA HISTÓRICA */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -381,7 +366,6 @@ td {
     font-size: 14px;
 }
 
-/* FONTES DE PESQUISA */
 .lista-fontes {
     background-color: #e6eee7;
     padding: 15px;
@@ -408,8 +392,6 @@ td {
     text-decoration: underline;
 }
 
-/* MENSAGEM FINAL */
-
 .mensagem-final {
     width: 90%;
     margin: 0 auto 40px;
@@ -428,7 +410,7 @@ td {
     color: #efbd37;
 }
 
-.mensagem-final > p:not(.categoria) {
+.mensagem-final p {
     font-size: 13px;
     line-height: 1.7;
     margin-bottom: 22px;
@@ -449,7 +431,6 @@ td {
     background-color: #4873cf;
 }
 
-/* RODAPÉ */
 footer,
 .rodape {
     background-color: #064f3b;
@@ -465,130 +446,6 @@ footer,
     letter-spacing: 2px;
 }
 
-/* TABLETS */
-@media (max-width: 900px) {
-    .center {
-        gap: 15px;
-    }
-
-    .grid-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .timeline {
-        flex-direction: column;
-        border-top: none;
-        border-left: 3px solid #087653;
-        padding-left: 20px;
-    }
-
-    .momento {
-        width: 100%;
-        text-align: left;
-        margin-bottom: 20px;
-    }
-
-    .momento::before {
-        margin: 0;
-        position: absolute;
-        left: -29px;
-        top: 2px;
-    }
-
-    .introducao-detalhe,
-    .curiosidades-secao,
-    .informacoes {
-        flex-direction: column;
-    }
-
-    img.imagem-detalhe,
-    .texto-detalhe,
-    .texto-curiosidades,
-    .imagem-curiosidades,
-    .tabela-historica,
-    .fontes {
-        width: 100%;
-    }
-
-    .imagem-curiosidades {
-        height: 260px;
-    }
-}
-
-/* CELULARES */
-@media (max-width: 500px) {
-    .center {
-        flex-direction: column;
-        gap: 10px;
-        padding: 15px;
-    }
-
-    .logo img {
-        width: 110px;
-        height: 120px;
-    }
-
-    .descer {
-        gap: 5px;
-    }
-
-    .descer a {
-        font-size: 15px;
-        padding: 8px;
-    }
-
-    .banner-detalhe {
-        padding: 40px 20px;
-    }
-
-    .conteudo-banner h1 {
-        font-size: 28px;
-    }
-
-    .linha-do-tempo,
-    .secao-detalhe {
-        padding: 30px 20px;
-    }
-
-    .card-exposicao {
-        flex-direction: column;
-    }
-
-    .card-thumb {
-        width: 100%;
-        height: 180px;
-    }
-
-    .card-thumb img {
-        min-height: 0;
-        height: 100%;
-    }
-
-    .card-conteudo {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .curiosidades-secao {
-        padding: 30px 20px;
-    }
-
-    .imagem-curiosidades {
-        height: 200px;
-    }
-
-    .informacoes {
-        gap: 30px;
-    }
-
-    .tabela-historica {
-        overflow-x: auto;
-    }
-
-    table {
-        min-width: 430px;
-    }
-}
 footer {
     margin-top: 40px;
     padding: 20px;
